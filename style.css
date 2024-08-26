@@ -1,1 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: rgb(255, 212, 219);
+}
 
+.container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-rows: 100px 250px 250px 250px;
+    justify-content: center;
+}
+
+.item1{
+    grid-column: 4;
+    grid-row: 2;
+    margin-left: 50px;
+    margin-top: 25px;
+    border: 10px solid rgb(196, 142, 151);
+    border-radius: 40px;
+}
+.item2{
+    grid-column: 5;
+    grid-row: 2;
+    margin-top: 25px;
+    border: 10px solid rgb(196, 142, 151);
+    border-radius: 40px;
+}
+.item3{
+    grid-column: 4;
+    grid-row: 3;
+    margin-left: 50px;
+    margin-top: 25px;
+    border: 10px solid rgb(196, 142, 151);
+    border-radius: 40px;
+}
+.item4{
+    grid-column: 5;
+    grid-row: 3;
+    margin-top: 25px;
+    border: 10px solid rgb(196, 142, 151);
+    border-radius: 40px;
+}
+.item5{
+    grid-column: 4;
+    grid-row: 4;
+    margin-left: 50px;
+    margin-top: 25px;
+    border: 10px solid rgb(196, 142, 151);
+    border-radius: 40px;
+}
+.item6{
+    grid-column: 5;
+    grid-row: 4;
+    margin-top: 25px;
+    border: 10px solid rgb(196, 142, 151);
+    border-radius: 40px;
+}
+.card{
+    text-align: center;
+    text-align: top;
+    grid-column: 3;
+    grid-row: 1;
+    font-family: "Grey Qo", cursive;
+    font-size: 100px;
+    margin-top: -10px;
+    color: #c0004a;
+}
+
+
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1{
+    grid-column: 1;
+    grid-row: 3;
+    text-align: left;
+}
+
+.p2{
+    grid-column: 1;
+    grid-row: 4;
+    text-align: left;
+    margin-top: -50px;
+}
+
+.p3{
+    grid-column: 2;
+    grid-row: 3;
+    text-align: right;
+}
+.p4{
+    grid-column: 2;
+    grid-row: 4;
+    text-align: right;
+    margin-top: -50px;
+}
+i{
+    color: red;
+}
+#c1{
+    margin-left: 30px;
+    transform: rotate(-20deg);
+    font-size: 60px;
+    grid-column: 4;
+    grid-row: 2;
+}
+#c2{
+    margin-left: 30px;
+    transform: rotate(30deg);
+    font-size: 60px;
+    grid-column: 5;
+    grid-row: 2;
+    text-align: end;
+}
+#c3{
+    margin-left: 30px;
+    transform: rotate(30deg);
+    font-size: 60px;
+    grid-column: 3;
+    grid-row: 5;
+    text-align: start;
+}
+#c4{
+    margin-left: 30px;
+    transform: rotate(30deg);
+    font-size: 60px;
+    grid-column: 5;
+    grid-row: 4;
+    text-align: end;
+}
+#c5{
+    margin-left: 30px;
+    transform: rotate(20deg);
+    font-size: 60px;
+    grid-column: 5;
+    grid-row: 3;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+#c6{
+    margin-left: 30px;
+    transform: rotate(-30deg);
+    font-size: 60px;
+    grid-column: 4;
+    grid-row: 4;
+    margin-left: 75px;
+    margin-top: -50px;
+}
+.fa-heart {
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    position: absolute;
+    animation:  heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+}
+
+@keyframes heartMove {
+    0%{
+        transform: translateY(-10vh) ;
+    }
+    100%{
+        transform: translateY(110vh) ;
+    }
+}
+
+.countdown {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    text-align: center;
+    font-size: 90px;
+    font-family: "Grey Qo", cursive;
+    margin-top: 20px;
+    color: #c0004a;
+}
+#verm{
+    color: #c0004a;
+}
+
+.card-music{
+    background: rgb(32,32,34);
+    background: linear-gradient(180deg, rgba(32,32,34,1) 0%, rgba(0,0,0,1) 100%); 
+    align-items: center;
+    grid-column: 3;
+    grid-row: 3;
+    width: 13rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: -30px;
+    box-shadow: 5px 5px 5px rgb(63, 62, 62);
+}
+
+.img-music{
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.text{
+    margin-top: 1rem;
+    line-height: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+.text p{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    color: gray;
+}
+
+.play-icon{
+    position: absolute;
+    top:70%;
+    right: 12%;
+    transform: translate(10px);
+}
+
+.circle{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: rgb(50,233,50);
+    display: grid;
+    place-items: center;
+    transform: scale(0.95);
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid black;
+    transform: rotate(90deg);
+    margin-left: 0.2rem;
+}
